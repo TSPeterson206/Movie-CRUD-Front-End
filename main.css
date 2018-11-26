@@ -1,0 +1,15 @@
+body {
+    background-color: lightgrey;
+}
+
+div {
+    border:1px solid;
+}
+
+.main {
+    height:100%;
+}
+
+.mainBody {
+    height:100%;
+}
