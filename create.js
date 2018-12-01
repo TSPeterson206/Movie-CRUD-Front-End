@@ -1,5 +1,4 @@
 const createForm = document.querySelector('form')
-console.log(createForm)
 
 
 // CREATE BUTTON
@@ -14,7 +13,6 @@ createForm.addEventListener('submit', function (event) {
     const year = document.querySelector('.createYear').value
     const rating = document.querySelector('.createRating').value
     const poster = document.querySelector('.createPoster').value
-    const table = document.querySelectorAll(".mainTable").value
 
     axios.post('http://localhost:3000/movies', {
             title,
@@ -27,14 +25,3 @@ createForm.addEventListener('submit', function (event) {
             window.location = '/index.html'
         })
 })
-
-//     let node = document.createElement("tr");
-//     let textnode = document.createTextNode(
-//         `<td>${title.value}</td>
-// <td>${director.value}</td>
-// <td>${year.value}</td>
-// <td>${rating.value}</td>
-// <td>${poster.value}</td>`
-//     );
-//     node.appendChild(textnode);
-//     table.appendChild(node);
