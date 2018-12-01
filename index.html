@@ -5,29 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script defer src="./main.js"></script>
+    <title>MOVIESPOT</title>
+    <script defer src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-    <div class="page-header">
-        <h1>MOVIESPOT</h1>
-        <h3>Read what we think, let us know what you think</h3>
-    </div>
-    <div class="container-fluid">
-        <div class="row main">
-            <div class="col-md-10 mainBody">
-
-            </div>
-            <div class="col-md-2">
-
-                </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container contributionHeader">
+            <h1 class="display-4">MovieSpot Central</h1>
+            <p class="lead">Peruse our selection. Feel free to add your own. Hate one? Delete one.</p>
+            <button><a href="./create.html">CreateMovie</a></button>
         </div>
     </div>
+    <div class="container-flex containerHome">
+        <div class="row main">
+            <div class="col-md-9 homeBody">
+                <table class="mainTable">
+                    <tr>
+                        <td id="tableTitle tableHeader">Title</td>
+                        <td id="tableDirector tableHeader">Director</td>
+                        <td id="tableYear tableHeader">Year</td>
+                        <td id="tableRating tableHeader">Rating</td>
+                        <td id="tablePoster tableHeader">Poster</td>
+                        <td id="tableEdit tableHeader">Edit</td>
+                        <td id="tableDelete tableHeader">Delete</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-3 editBay">
+                <button class="editButton">EDIT</button>
 
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

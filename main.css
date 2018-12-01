@@ -2,14 +2,122 @@ body {
     background-color: lightgrey;
 }
 
+.jumbotron-fluid {
+    background-image: url('web-cinema-seats.jpg');
+    color:white;
+}
+
 div {
-    border:1px solid;
+    border: 1px solid;
 }
 
 .main {
+    height: 100%;
+}
+
+.createBody {
+    height: 100%;
+}
+
+.containerHome {
+    justify-content: space-evenly;
+}
+.homeBody {
+    justify-content: space-evenly;
+}
+
+/* CREATE PAGE */
+.container span {
+    padding: 20px;
+    background-color: rgba(209, 209, 209, 0.58);
+    margin: auto;
+    margin-top: 20px;
+    line-height: 30px;
+    width: 500px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container span {
+    margin-top: 10px;
+    padding-left: 40px;
+
+    width: 30%;
+}
+
+.container input {
+    min-height: 25px;
+    display: inline-block;
+    width: 50%;
+}
+
+.container textarea {
+    display: inline-block;
+    margin-top: 10px;
+    width: 50%;
+}
+
+#submit,
+#reset {
+    display: inline-block;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+#reset {
+    margin-left: 10%;
+}
+
+.createField {
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+.createFieldSubmit {
+    margin-bottom: 28px;
+    margin-top:8px;
+    margin-right:128px;
+}
+
+.contributionHeader {
+    text-align: center;
+}
+.createMovieDiv {
+    text-align:center;
+    font-size:25px;
+}
+.createMovieForm {
+    width:50%;
+    display:inline-block;
+}
+
+.createFieldSubmit {
+    
+    margin:0 auto;
+    width:50%;
+}
+
+/* TABLE */
+
+.mainTable {
+    table-layout: fixed;
+    width: 100%;
+    font-size:30px;
+}
+.tableHeader {
+    font-size:30px;
+}
+
+.editBay {
     height:100%;
 }
 
-.mainBody {
+.editMovieForm {
     height:100%;
 }

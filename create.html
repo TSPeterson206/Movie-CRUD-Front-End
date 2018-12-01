@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Movie</title>
+    <script defer src="/create.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container contributionHeader">
+            <h1 class="display-4">Contribution</h1>
+            <p class="lead">Please add a movie to our data. We want to know what you think.</p>
+            <a class="mainCreateButton" href="./index.html">Add Movie</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row main">
+            <div class="col-md-12 createBody">
+                <h2 class="title">Enter Movie</h2>
+                <div class="createMovieDiv">
+                    <form class="createMovieForm">
+                        <div id="title"> <span>Title</span>
+                            <input class="createField createTitle" type="text" required> </div>
+                        <div id="director"> <span>Director</span>
+                            <input class="createField createDirector" type="text" required> </div>
+                        <div id="year"> <span>Year</span>
+                            <input class="createField createYear" type="number" required> </div>
+                        <div id="rating"> <span>Rating</span>
+                            <input class="createField createRating" type="number" min="1" max="5" required> </div>
+                        <div id="poster"> 
+                            <span>Poster</span>
+                            <input class="createField createPoster" type="text" required> 
+                        </div>
+                            <button class="createFieldSubmit" type="submit" id="submit" value="submit">
+                                create
+                            </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
