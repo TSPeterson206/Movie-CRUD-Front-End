@@ -21,6 +21,7 @@ div {
 
 .containerHome {
     justify-content: space-evenly;
+    height:100%;
 }
 .homeBody {
     justify-content: space-evenly;
@@ -105,16 +106,24 @@ div {
 
 /* TABLE */
 
-.mainTable {
+.mainTable, .tableTop {
     table-layout: fixed;
     width: 100%;
     font-size:30px;
+}
+.tableTop {
+    table-layout: fixed;
+    width: 100%;
+    font-size:40px;
 }
 .tableHeader {
     font-size:30px;
 }
 
 .editBay {
+    height:100%;
+}
+.editForm {
     height:100%;
 }
 
