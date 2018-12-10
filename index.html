@@ -20,7 +20,7 @@
             <p class="lead">Peruse our selection. Feel free to add your own. Hate one? Delete one.</p>
         </div>
     </div>
-    <div class="container-flex containerHome">
+    <div class="container-fluid containerHome">
         <div class="row main">
             <div class="col-md-9 homeBody">
                 <table class="tableTop">
@@ -37,26 +37,33 @@
                 <table class="mainTable">
                 </table>
             </div>
-            <div class="col-md-2 editBay">
-
-                <div id="title"> <span> Title </span>
-                    <input class="editField editTitle" type="text" required> </div>
-                <div id="director"> <span> Director </span> <input class="editField editDirector" type="text" required>
-                </div>
-                <div id="year"> <span> Year </span> <input class="editField editYear" type="number" required> </div>
-                <div id="rating"> <span> Rating </span> <input class="editField editRating" type="number" min="1" max="5"
-                        required> </div>
-                <div id="poster"> <span>Poster</span> <input class="editField editPoster" type="text" required>
-
-
-
-                </div>
+        
+        <div class="col-md-3 editBay">
+            <div class="row editBayRow">
+                <form class="editForm">
+                    <div id="title"> <span> Title </span>
+                        <input class="editTitle" type="text" required> </div>
+                    <div id="director"> <span> Director </span> <input class="editDirector" type="text" required>
+                    </div>
+                    <div id="year"> <span> Year </span> <input class="editYear" type="number" required> </div>
+                    <div id="rating"> <span> Rating </span> <input class="editRating" type="number" min="1" max="5"
+                            required> </div>
+                    <div id="poster"> <span>Poster</span> <input class="editPoster" type="text" required>
+                    </div>
+                </form>
             </div>
-            <div class="col-md-1 create">
-                <button><a href="./create.html">CreateMovie</a></button>
-
-            </div>
+            <div class="editPara">
+            <p>Please fill in all fields and press the corresponding edit button to modify a film</p>
         </div>
+
+        </div>
+    </div>
+        <div class="container createButtonContainer">
+                <div class="create">
+                        <button class="createButton"><a href="./create.html">CreateMovie</a></button>
+                    </div>
+                    Press me to add a movie to the list!
+                </div>
 </body>
 
 </html>

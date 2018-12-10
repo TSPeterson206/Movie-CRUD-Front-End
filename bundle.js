@@ -14,7 +14,7 @@ function init() {
                 <td>${ele.director}</td>
                 <td>${ele.year}</td>
                 <td>${ele.rating}</td>
-                <td>${ele.poster}</td>
+                <td class="img posterSpot">${ele.poster}</img></td>
                 <td><button data-id="${ele.id}" class="editButton">EDIT</button></td>
                 <td><button data-id="${ele.id}" class="removeButton">DELETE</button></td><tr>`
                 return newEntry
