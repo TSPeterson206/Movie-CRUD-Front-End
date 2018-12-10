@@ -1,7 +1,7 @@
 // POPULATE LIST
 function init() {
 
-    axios.get('http://localhost:3000/movies')
+    axios.get('https://salty-spire-15604.herokuapp.com/movies')
         .then(response => {
             if (!response.data.data) {
                 return
@@ -42,7 +42,7 @@ function addEventListenerEditButton() {
             const rating = document.querySelector('.editRating')
             const poster = document.querySelector('.editPoster')
 
-            axios.put(`http://localhost:3000/movies/${id}`, {
+            axios.put(`https://salty-spire-15604.herokuapp.com/movies/${id}`, {
                     title: title.value,
                     director: director.value,
                     year: year.value,
@@ -65,7 +65,7 @@ function addEventListenerMainList() {
 
         function handleRemove(event) {
             const id = event.target.getAttribute('data-id')
-            axios.delete(`http://localhost:3000/movies/${id}`)
+            axios.delete(`https://salty-spire-15604.herokuapp.com/movies/${id}`)
                 .then(() => {
                     init()
                 })

@@ -14,7 +14,7 @@ createForm.addEventListener('submit', function (event) {
     const rating = document.querySelector('.createRating').value
     const poster = document.querySelector('.createPoster').value
 
-    axios.post('http://localhost:3000/movies', {
+    axios.post('https://salty-spire-15604.herokuapp.com/movies', {
             title,
             director,
             year,
